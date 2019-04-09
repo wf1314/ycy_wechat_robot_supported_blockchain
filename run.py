@@ -35,9 +35,9 @@ if __name__ == '__main__':
     @bot.register(msg_types='Text')
     def reply_message(msg):
         """消息回复"""
-        logger.info(msg.sender)
         if type(msg.sender) == Group and msg.sender.puid in ALLOW_GROUPS:   # 限定群组
             logger.info("=== start ===")
+            logger.info(msg.sender)
             replier.set_group(msg.sender.puid)  # 获取群信息
             logger.info(msg.member.puid)
             if msg.type == "Note":
