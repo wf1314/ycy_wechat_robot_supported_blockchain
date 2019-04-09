@@ -395,6 +395,6 @@ $RECYCLE.BIN/
 .idea/
 wxpy.pkl
 wxpy_puid.pkl
- 
+
 # api key
 secret.py
